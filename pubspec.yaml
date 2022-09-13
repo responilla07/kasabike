@@ -25,6 +25,11 @@ dependencies:
         ref: main
 
   flutter_svg: ^0.21.0
+  google_maps_flutter: ^2.2.0
+  google_maps_routes: ^1.1.2
+  http: ^0.13.4
+  flutter_polyline_points: ^1.0.0
+  location: ^4.3.0
 
 dev_dependencies:
   flutter_test:
@@ -34,6 +39,7 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+    - images/map/
   fonts:
     - family: Inter
       fonts:
