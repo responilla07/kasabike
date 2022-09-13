@@ -101,8 +101,8 @@ class _MyHomePageState extends State<MyHomePage> {
   _openPage() {
     navigatorPush(
       context: context,
-      name: 'Login',
-      widget: Login(),
+      name: 'Index',
+      widget: IndexPage(),
     );
   }
 }
