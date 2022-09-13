@@ -30,9 +30,12 @@ class _LoginState extends State<Login> {
                   children: [
                     SvgPicture.asset(
                       'images/logo_simple.svg',
-                      width: 60,
+                      width: 56,
                       fit: BoxFit.contain,
                       color: Theme.of(context).primaryColor,
+                    ),
+                    SizedBox(
+                      width: 12,
                     ),
                     Text(
                       'Kasabike',
