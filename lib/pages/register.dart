@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:kasabike/pages/register.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:kasabike/main.dart';
 
-class Login extends StatefulWidget {
-  // const Login({super.key});
+class Register extends StatefulWidget {
+  // const Register({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<Register> createState() => _RegisterState();
 }
 
-class _LoginState extends State<Login> {
+class _RegisterState extends State<Register> {
   bool _isObscure = true;
+  bool _isObscure2 = true;
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +58,26 @@ class _LoginState extends State<Login> {
                 const SizedBox(
                   height: 16,
                 ),
+                const TextField(
+                  decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
+                      labelText: "First name",
+                      suffixIcon: Icon(Icons.person)),
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                const TextField(
+                  decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
+                      labelText: "Last Name",
+                      suffixIcon: Icon(Icons.person)),
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
                 TextField(
                   obscureText: _isObscure,
                   decoration: InputDecoration(
@@ -77,18 +98,38 @@ class _LoginState extends State<Login> {
                 const SizedBox(
                   height: 24,
                 ),
+                TextField(
+                  obscureText: _isObscure2,
+                  decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
+                      labelText: "Password confirm",
+                      suffixIcon: IconButton(
+                        icon: Icon(_isObscure2
+                            ? Icons.visibility
+                            : Icons.visibility_off),
+                        onPressed: () {
+                          setState(() {
+                            _isObscure2 = !_isObscure2;
+                          });
+                        },
+                      )),
+                ),
+                const SizedBox(
+                  height: 24,
+                ),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         minimumSize: const Size.fromHeight(40)),
                     onPressed: () {
                       //todo: add navigator here
                     },
-                    child: const Text("Sign In")),
+                    child: const Text("Sign Up")),
                 const SizedBox(
                   height: 32,
                 ),
                 const Text(
-                  "Or sign in with",
+                  "Or sign up with",
                   style: TextStyle(color: Colors.black45),
                 ),
                 const SizedBox(
@@ -120,7 +161,7 @@ class _LoginState extends State<Login> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text("Don't have an account?"),
+                    const Text("Already have an account?"),
                     TextButton(
                         onPressed: () {
                           Navigator.push(
@@ -129,16 +170,9 @@ class _LoginState extends State<Login> {
                                 builder: (context) => Register(),
                               ));
                         },
-                        child: const Text("Create Account"))
+                        child: const Text("Login Instead"))
                   ],
                 ),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    "Forgot Password",
-                    style: TextStyle(color: Colors.red),
-                  ),
-                )
               ]),
             ),
           ],
