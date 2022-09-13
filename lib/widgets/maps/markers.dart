@@ -41,7 +41,7 @@ class AppMarkers {
   }
 
   static void loadMarkerPinImages() async {
-    //
+    //44
     final Uint8List pnxMarkerIcon =
         await _getBytesFromAsset('image/map/my_location.png', 100);
     _markerIcon.putIfAbsent('store', () => pnxMarkerIcon);

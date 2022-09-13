@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:kasabike/pages/register.dart';
+import 'package:social_media_logins/social_media_logins.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+GoogleSignIn _googleSignIn = GoogleSignIn(
+  scopes: [
+    'email',
+    'https://www.googleapis.com/auth/contacts.readonly',
+  ],
+);
 
 class Login extends StatefulWidget {
   // const Login({super.key});
@@ -98,7 +107,11 @@ class _LoginState extends State<Login> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () async {
+                          //   GoogleSignInAccount googleAccnt = await Google.login();
+                          // print('Google Account Email: ${googleAccnt.email}');
+                          _handleSignIn();
+                        },
                         child: Image.asset(
                           'images/google.png',
                           width: 48,
@@ -146,4 +159,11 @@ class _LoginState extends State<Login> {
       ),
     );
   }
+  Future<void> _handleSignIn() async {
+  try {
+    await _googleSignIn.signIn();
+  } catch (error) {
+    print(error);
+  }
+}
 }
