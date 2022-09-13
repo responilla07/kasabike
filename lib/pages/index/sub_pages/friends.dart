@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:kasabike/pages/index/sub_pages/friends_details.dart';
+import 'package:kasabike/pages/index/sub_pages/home.dart';
+import 'package:kasabike/widgets/custom_field.dart';
 
 class Friends extends StatefulWidget {
   // const Friends({super.key});
@@ -11,40 +14,37 @@ class Friends extends StatefulWidget {
 class _FriendsState extends State<Friends> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Container(
-          child: Center(
-            child: Padding(
-              padding: EdgeInsets.all(8),
-              child: Row(children: [
-                TextField(
-                  decoration: InputDecoration(
-                      hintText: "Search for friends",
-                      border: InputBorder.none,
-                      enabledBorder: InputBorder.none,
-                      fillColor: Colors.white,
-                      filled: true),
-                ),
-                IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.search,
-                      color: Colors.black,
-                    ))
-              ]),
-            ),
+    return Container(
+      padding: EdgeInsets.all(16),
+      child: Column(children: [
+        SizedBox(
+          height: 32,
+        ),
+        CustomTextField(
+          hintText: "Find friends",
+          borderRadius: 8,
+          suffixIcon: Icon(Icons.search),
+        ),
+        SizedBox(
+          height: 8,
+        ),
+        Expanded(
+          child: GridView.count(
+            crossAxisCount: 2,
+            mainAxisSpacing: 10,
+            crossAxisSpacing: 10,
+            children: [
+              _FriendsCard(),
+              _FriendsCard(),
+              _FriendsCard(),
+              _FriendsCard(),
+              _FriendsCard(),
+              _FriendsCard(),
+              _FriendsCard(),
+            ],
           ),
         ),
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(16),
-          child: Column(
-            children: [_FriendsCard()],
-          ),
-        ),
-      ),
+      ]),
     );
   }
 }
@@ -53,32 +53,40 @@ class _FriendsState extends State<Friends> {
 class _FriendsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Container(
-                width: 150.0,
-                height: 150.0,
-                decoration: new BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: new DecorationImage(
-                        fit: BoxFit.cover,
-                        //todo: replace image asset with network image
-                        image: Image.asset('images/man.jpg').image))),
-            SizedBox(
-              height: 16,
-            ),
-            Text(
-              "Jane Doe",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            Text("Calamba")
-          ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => FriendsDetails(),
+            ));
+      },
+      child: Card(
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Container(
+                  width: 80.0,
+                  height: 80.0,
+                  decoration: new BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: new DecorationImage(
+                          fit: BoxFit.cover,
+                          image: Image.asset('images/man.jpg').image))),
+              SizedBox(
+                height: 12,
+              ),
+              Text(
+                "John Doe",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 4,
+              ),
+              Text("Calamba")
+            ],
+          ),
         ),
       ),
     );
