@@ -12,6 +12,7 @@ import 'package:firebase_core_web/firebase_core_web.dart';
 import 'package:firebase_messaging_web/firebase_messaging_web.dart';
 import 'package:firebase_performance_web/firebase_performance_web.dart';
 import 'package:google_sign_in_web/google_sign_in_web.dart';
+import 'package:location_web/location_web.dart';
 import 'package:sign_in_with_apple_web/sign_in_with_apple_web.dart';
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
@@ -25,6 +26,7 @@ void registerPlugins(Registrar registrar) {
   FirebaseMessagingWeb.registerWith(registrar);
   FirebasePerformanceWeb.registerWith(registrar);
   GoogleSignInPlugin.registerWith(registrar);
+  LocationWebPlugin.registerWith(registrar);
   SignInWithApplePlugin.registerWith(registrar);
   registrar.registerMessageHandler();
 }

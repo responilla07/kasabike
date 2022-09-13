@@ -1,6 +1,23 @@
 import 'package:flutter/material.dart';
+import 'dart:math' show cos, sqrt, asin;
+
+import 'dart:math';
 
 const double pi = 3.1415926535897932;
+
+class Maths {
+  static double calculateDistance(lat1, lon1, lat2, lon2) {
+    var p = 0.017453292519943295;
+
+    // var p = pi;
+    var c = cos;
+    var a = 0.5 -
+        c((lat2 - lat1) * p) / 2 +
+        c(lat1 * p) * c(lat2 * p) * (1 - c((lon2 - lon1) * p)) / 2;
+    return 3960 * asin(sqrt(a));
+  }
+}
+
 
 navigatorPush({
   @required BuildContext context,
