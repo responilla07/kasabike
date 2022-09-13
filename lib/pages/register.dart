@@ -30,7 +30,7 @@ class _RegisterState extends State<Register> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SvgPicture.asset(
-                      'images/logo.svg',
+                      'images/logo_simple.svg',
                       width: 60,
                       fit: BoxFit.contain,
                       color: Theme.of(context).primaryColor,

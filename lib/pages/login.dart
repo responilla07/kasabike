@@ -29,7 +29,7 @@ class _LoginState extends State<Login> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SvgPicture.asset(
-                      'images/logo.svg',
+                      'images/logo_simple.svg',
                       width: 60,
                       fit: BoxFit.contain,
                       color: Theme.of(context).primaryColor,
