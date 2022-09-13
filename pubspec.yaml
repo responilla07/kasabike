@@ -25,6 +25,7 @@ dependencies:
         ref: main
 
   flutter_svg: ^0.21.0
+  google_sign_in: ^5.4.1
 
 dev_dependencies:
   flutter_test:
