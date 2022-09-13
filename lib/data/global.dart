@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+
+const double pi = 3.1415926535897932;
 
 navigatorPush({
   @required BuildContext context,
@@ -17,7 +18,6 @@ navigatorPush({
     ),
   );
 }
-
 
 void showScaffoldMessage({
   String message =

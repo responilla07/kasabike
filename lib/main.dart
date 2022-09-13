@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:kasabike/pages/index.dart';
+import 'package:kasabike/pages/index/index.dart';
 
 import 'data/global.dart';
+import 'dart:async';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
