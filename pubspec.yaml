@@ -14,15 +14,15 @@ dependencies:
   # PACKAGES
   cupertino_icons: ^1.0.2
   cloud_firestore: ^3.1.5
-  social_media_logins:
-    git:
-      url: https://github.com/responilla07/social_media_logins
-      ref: main
   firebase_messaging: ^11.2.4
   firebase_analytics: ^9.0.4
   firebase_performance: ^0.8.0+3
   firebase_auth: ^3.3.7
   firebase_dynamic_links: ^4.0.3
+  social_media_logins:
+      git:
+        url: https://github.com/responilla07/social_media_logins
+        ref: main
 
   flutter_svg: ^0.21.0
   google_sign_in: ^5.4.1
