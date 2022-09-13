@@ -101,7 +101,7 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                   children: [],
                 ),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.star,
@@ -125,7 +125,13 @@ class _FriendsDetailsState extends State<FriendsDetails> {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: 16,
+                ),
                 Divider(),
+                SizedBox(
+                  height: 16,
+                ),
                 Text("Latest rider reviews"),
               ]),
             ),
