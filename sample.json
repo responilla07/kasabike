@@ -1,0 +1,329 @@
+{
+    "geocoded_waypoints": [
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJ_6O21TB7vTMR9Ixi7gKyh_E",
+            "types": [
+                "establishment",
+                "point_of_interest"
+            ]
+        },
+        {
+            "geocoder_status": "OK",
+            "place_id": "ChIJ5V35gkxivTMRWRKLchZIPNc",
+            "types": [
+                "street_address"
+            ]
+        }
+    ],
+    "routes": [
+        {
+            "bounds": {
+                "northeast": {
+                    "lat": 14.2598461,
+                    "lng": 121.1423437
+                },
+                "southwest": {
+                    "lat": 14.1266327,
+                    "lng": 120.9895124
+                }
+            },
+            "copyrights": "Map data ©2022",
+            "legs": [
+                {
+                    "distance": {
+                        "text": "29.8 km",
+                        "value": 29849
+                    },
+                    "duration": {
+                        "text": "46 mins",
+                        "value": 2787
+                    },
+                    "end_address": "49 Manila S Rd, Calamba, 4027 Laguna, Philippines",
+                    "end_location": {
+                        "lat": 14.2178437,
+                        "lng": 121.1423437
+                    },
+                    "start_address": "Kapalaran Compound, Brgy, Tagaytay, Cavite, Philippines",
+                    "start_location": {
+                        "lat": 14.1272007,
+                        "lng": 120.9991172
+                    },
+                    "steps": [
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 126
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 16
+                            },
+                            "end_location": {
+                                "lat": 14.1266327,
+                                "lng": 120.9981011
+                            },
+                            "html_instructions": "Head <b>southwest</b> on <b>Tagaytay - Calamba Rd</b> toward <b>Kaykulot Rd</b>",
+                            "polyline": {
+                                "points": "_ffuAosoaVb@~@lAjC"
+                            },
+                            "start_location": {
+                                "lat": 14.1272007,
+                                "lng": 120.9991172
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.7 km",
+                                "value": 1667
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 167
+                            },
+                            "end_location": {
+                                "lat": 14.1396766,
+                                "lng": 120.9908228
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Kaykulot Rd</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "mbfuAcmoaVsAv@e@VWPg@Zc@^KLSNGDo@JUBA@SDm@TA?g@VULSLsBfBYViA`Am@b@cAl@k@\\UJaAd@a@PwCjAGBe@RaBr@OFG@YJUFk@RQFeAf@ODU?E@Y?G@MBGDGB?@o@d@i@`@m@\\]NQHgA^IBeErAa@LcCv@A?OFyCp@IBo@PIB[Nk@\\_@TMLa@\\"
+                            },
+                            "start_location": {
+                                "lat": 14.1266327,
+                                "lng": 120.9981011
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 198
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 26
+                            },
+                            "end_location": {
+                                "lat": 14.1409074,
+                                "lng": 120.9895124
+                            },
+                            "html_instructions": "Continue straight",
+                            "maneuver": "straight",
+                            "polyline": {
+                                "points": "_thuAs_naVa@TSLA@WVY\\o@v@UZA@o@x@SX"
+                            },
+                            "start_location": {
+                                "lat": 14.1396766,
+                                "lng": 120.9908228
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "14.5 km",
+                                "value": 14517
+                            },
+                            "duration": {
+                                "text": "24 mins",
+                                "value": 1454
+                            },
+                            "end_location": {
+                                "lat": 14.2453417,
+                                "lng": 121.0604582
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Santa Rosa - Tagaytay Rd</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "u{huAmwmaViEaBgCcAaCaAmAe@iAa@c@Qo@[gB{@iD{A{IyDoAk@]Q[OECo@_@IAa@MWGAA]Ik@Oi@K_@GUE[CSC_@AcFIuA?uBCu@Au@C[C]Es@Mc@Go@Mq@O[IiAYcBa@}Aa@}Aa@uA]wCw@qAa@eAWq@O{@UaB_@aBa@wAi@cAa@gAc@kBu@w@]yB_AqAg@sAg@w@YsAg@{Am@SIaAa@eAa@s@Yg@Qa@Kg@K_B[s@MoB_@oAUmAScBW_AOmCc@_ASwCe@o@Oo@M]I]Gc@OOGQIi@[UOQKOK[Ok@Yo@Ww@[cBo@GCgAc@eAa@SKIC_Ac@e@S[Mc@Qa@Oa@SiAg@i@Wm@]o@a@i@e@e@a@c@a@[]CASWCCOQGIOQy@kA{@oAgA_BaAwACE_A{Aw@qAk@}@MOo@aAeAyAWc@iAqBEEa@k@e@o@GIU[GGOSU[A?W[U[a@g@U[a@o@OUEG}AaCw@}@]a@OO[a@MOOOMMIIMMGEUKOGKCME}@Oc@IYCiBc@iB_@a@OgA[qAa@y@Wm@Uc@Oo@W[Me@S]S}@g@QKk@Y]U_@Wk@]MGw@i@q@c@k@]k@]aAm@i@[c@Y_@UWMQIm@WmAi@eGkCoAi@}@c@YSe@]k@e@eA{@}AsAIGIGSOMI]SUMKEMGg@Ym@_@u@k@AE?AAAGE_@Yq@g@WOCAEC_@O_@Mi@SSKg@]QKi@]m@c@WUWUe@k@GIYUQM]Q]Kk@QC?AAC?CAA?CACAA?CAC?AAC?CAAAC?C?AAC?CAA?CAC?AAC?C?C?AAC?C?A?CAC?C?A?CAC?A?C?C?CAC?C?A?C?CAA?C?C?C?A?CAC?C?A?C?CAC?A?C?C?A?CAC?C?A?C?C?CAA?C?C?C?A?CAC?A?C?C?C?AAC?C?C?A?C?C?C?AAC?C?C?A?C@C?A?C?C?C@A?C@k@C[?_@Ac@AG?gACkFWiBIoCK{AGy@Cs@CsBGWA[AKAKAKEECECQKYWa@a@oAwAkAoAcAiAIIw@{@SSq@q@yB_CQSqAyAwCcDaAgAyCeDwCcDMMkBuBEEQQKMs@y@e@g@[]q@u@sAuAkBsBcBgB]c@kCuCu@y@IIs@w@w@}@w@{@wA{AoBoBoBwA[MsCy@}Bs@wAc@mA[sAe@YKC?UK]MMGWMOKMMMa@Og@I[IWi@mB_@wAs@eCyAqFiBwGYeAGUmAoEq@mCu@}Cm@gBSg@MUOW[q@q@yAACwB}Ec@_Ay@iB[s@GKEGGIGIIGIKUKSIwJyDqCeAyBo@u@Wc@MuC}@o@SaDiASK]W{@o@iBsAeEuCa@YCAKIIEGECAICQISGSEWESEOCKCICCAEACCGAMIeAs@MG_Aq@uBuAMEi@_@MGIEi@SsAi@kBoAi@[WSe@]]Q_@WkAw@QMOGOEOGc@[o@_@kAu@}@m@QKc@[w@i@UMWQSOwCmBiAu@"
+                            },
+                            "start_location": {
+                                "lat": 14.1409074,
+                                "lng": 120.9895124
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "2.8 km",
+                                "value": 2829
+                            },
+                            "duration": {
+                                "text": "4 mins",
+                                "value": 220
+                            },
+                            "end_location": {
+                                "lat": 14.2563714,
+                                "lng": 121.0805244
+                            },
+                            "html_instructions": "Turn <b>right</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "kh}uA{r{aVn@}@vGcLVw@HqAEgB?QO{A?AYiB?Ai@sAs@_BiA_Bo@m@y@s@EC[Uy@g@a@O?ACGEGCEmAu@oBmAsEwC][GEkFgDkA{@iAw@YSyAaAsCkBq@e@g@a@_@c@QYOk@I[QoAOmASmAQo@S{@GSc@qAg@_Bu@sBIWUs@_@cAg@yAKWUw@c@qAk@{AUs@Ym@CG]i@KOOO[Og@Wm@Sc@Kg@Q[QUWOYKUGQG[Ga@"
+                            },
+                            "start_location": {
+                                "lat": 14.2453417,
+                                "lng": 121.0604582
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "2.2 km",
+                                "value": 2192
+                            },
+                            "duration": {
+                                "text": "3 mins",
+                                "value": 183
+                            },
+                            "end_location": {
+                                "lat": 14.255723,
+                                "lng": 121.0977015
+                            },
+                            "html_instructions": "Turn <b>right</b> onto <b>Greenfield Pkwy</b>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "im_vAgp_bV?ARe@DQDYB_@BmADsBBeB?y@Aa@A_@Cc@C}@GiAI_AScB]oCi@aDSqAcAeFe@iBy@}Ca@sAMa@Yy@EK[}@Sg@Uk@{B_Fy@}Ai@aAUc@EQGQIc@AAGk@Ea@Ci@?c@@a@BYHi@Je@Tw@Vo@\\i@Zc@\\Y^Y\\SpAm@nDyAXORMXAJEHCxF}B"
+                            },
+                            "start_location": {
+                                "lat": 14.2563714,
+                                "lng": 121.0805244
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.1 km",
+                                "value": 1144
+                            },
+                            "duration": {
+                                "text": "2 mins",
+                                "value": 99
+                            },
+                            "end_location": {
+                                "lat": 14.2522366,
+                                "lng": 121.1051433
+                            },
+                            "html_instructions": "Take the ramp to <b>Batangas</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "polyline": {
+                                "points": "gi_vAs{bbVPItCqA|Am@nAg@pBy@zB_ADAp@WlAe@f@Ud@UPSX]LYL]F[B]?[Cg@Mi@EMYs@mAuCi@wAq@kB]aAQg@GSCMCSA[Bm@BK@KH[JSLSJM\\WFGBGDM"
+                            },
+                            "start_location": {
+                                "lat": 14.255723,
+                                "lng": 121.0977015
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "5.2 km",
+                                "value": 5214
+                            },
+                            "duration": {
+                                "text": "5 mins",
+                                "value": 320
+                            },
+                            "end_location": {
+                                "lat": 14.2118043,
+                                "lng": 121.1296239
+                            },
+                            "html_instructions": "Merge onto <b>S Luzon Expy</b>/<wbr/><b>Pan-Philippine Hwy</b>/<wbr/><b>AH26</b>/<wbr/><b>R-3</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "maneuver": "merge",
+                            "polyline": {
+                                "points": "os~uAcjdbV`@O^O^OVMdAa@xCoAlBy@zBcAZOLEnBaAj@WzAw@lBaAhBaAzAw@pAo@~BiAr@_@pBkAlFqCtFsCxDqBbEyBlE_CpBcA|EgC\\S\\Q\\SNI~CcBfFoCvAs@dAi@xBkAxBiAhBaAhAk@lDkBrCyAvC{ArAs@~BmAr@_@jAm@zF{CzAw@`CmAvFyC^S\\S\\Q^S\\S^Q\\SZQ@A^Q\\S^Q\\S^Q\\Q^S\\Q^S\\QNILI^Q\\S^S\\Q\\S^SVMnAq@^OPIJG^SJGPK\\S\\S\\S^S\\S\\S\\SLIbDaBrCmA^QXMxAw@|GqDbO{HTK"
+                            },
+                            "start_location": {
+                                "lat": 14.2522366,
+                                "lng": 121.1051433
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.2 km",
+                                "value": 206
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 28
+                            },
+                            "end_location": {
+                                "lat": 14.211504,
+                                "lng": 121.1288369
+                            },
+                            "html_instructions": "Take exit <b>47-Canlubang</b> toward <b>Mayapa-Canlubang Cadre Rd</b><div style=\"font-size:0.9em\">Toll road</div>",
+                            "maneuver": "ramp-right",
+                            "polyline": {
+                                "points": "wvvuAccibVf@CH?VCL?L@L@FBDBDB@@@?BB@B@BBB@DBB@DBF@H@HAJ?HCHCHCFGJEDCBE@IDIBG@G@G@I?OC"
+                            },
+                            "start_location": {
+                                "lat": 14.2118043,
+                                "lng": 121.1296239
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "1.6 km",
+                                "value": 1630
+                            },
+                            "duration": {
+                                "text": "4 mins",
+                                "value": 248
+                            },
+                            "end_location": {
+                                "lat": 14.218302,
+                                "lng": 121.1412728
+                            },
+                            "html_instructions": "Keep <b>right</b> at the fork and merge onto <b>Mayapa-Canlubang Cadre Rd</b>",
+                            "maneuver": "fork-right",
+                            "polyline": {
+                                "points": "{tvuAg~hbVKEKGEEEICEO[Si@@a@BiBB}A@KDsC?mBAa@?YAIGO?IEyAEe@[mDE]Ma@Om@O[KWMSg@w@w@mAq@kAIOSYs@gAgAiBk@}@_@k@S[W_@[a@a@a@u@o@q@k@qAiAiBeB}AwAoC_CwAuAgA}@"
+                            },
+                            "start_location": {
+                                "lat": 14.211504,
+                                "lng": 121.1288369
+                            },
+                            "travel_mode": "DRIVING"
+                        },
+                        {
+                            "distance": {
+                                "text": "0.1 km",
+                                "value": 126
+                            },
+                            "duration": {
+                                "text": "1 min",
+                                "value": 26
+                            },
+                            "end_location": {
+                                "lat": 14.2178437,
+                                "lng": 121.1423437
+                            },
+                            "html_instructions": "Turn <b>right</b> after BDO (on the right)<div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                            "maneuver": "turn-right",
+                            "polyline": {
+                                "points": "k_xuA}kkbV`@uAj@{AFYDI"
+                            },
+                            "start_location": {
+                                "lat": 14.218302,
+                                "lng": 121.1412728
+                            },
+                            "travel_mode": "DRIVING"
+                        }
+                    ],
+                    "traffic_speed_entry": [],
+                    "via_waypoint": []
+                }
+            ],
+            "overview_polyline": {
+                "points": "_ffuAosoaVpBjEsAv@}@h@kAz@_@\\w@PWDaAZsAr@mC~BwBdBoBjAwAp@gFtBqBz@a@LaAZwAn@e@D_@@UDOHo@f@wA~@o@XqAb@mJxCcFnAe@RkAr@o@j@u@b@cBnB{ApBqIeDoEgBmBs@wCwAsRsI{Au@yAa@kCi@o@GcGKkECkBEy@IwAUgEaAuJcCiFyAwBg@}Cu@aBa@wAi@kCeAcDsAkEgBkCaAeGaCyB{@iA]kHuAaIqAuKmBmAWaAWaB}@iBaAsEgBkDuAeDwAwDcB}A_AoAgAwAyAk@q@_GsIgDqF}@qA}A}BoAwBgA{Au@aAeAsAw@cAq@eAcBiCuA_BiAqAm@k@e@SYIaBYcCg@kCo@yC}@{DuAaAa@{A{@{BsAgJyFmBgAqMwFwAw@qAcAwD_DuA{@oBgAu@k@AEACqBwAIE_A]}@_@y@i@wAaAo@k@m@u@k@c@{@]o@QKC[Iu@KmBKw@Ew@AM?u@?gBCmPq@}HWkAGi@Y{@y@{CgDyCcDoG_H}SqUaCmCuIgJiF}F{FmGoBoBoBwAoDgAuEwAaDaAqAe@e@U]Yq@}BwE}PyEcQgBkHaAoCkByDwEkKc@_AMQQQ_@WkKcEqCeAyBo@yAe@eEqAaDiASKyAgAuIeGa@WcA[gASWKiBgAuDgCw@e@uCkAuCkB}@q@}@i@}AeA_@MOGc@[{BuAoAy@iCeBkD}BiAu@n@}@vGcLVw@HqAEgBOmBYkBi@uAs@_BiA_BiBaBa@Yy@g@a@OCIIM}DcCsEwC][sFmDiGiEeEqCg@a@_@c@QYOk@[kBc@{Ce@kBiCyHgBiFa@oAoAmDo@aBa@q@[_@cAg@qA_@cAc@UWOYSg@O}@Rg@Jk@FmBHyEA{AQkE]cDgAqHwAwH_BgGoA{Do@eBqCkGcB_D[u@Qu@Im@IkA@eALcA`@}At@yAZc@\\Y|@m@`GgCl@]d@GbGaCfD{AzKoElDuAd@UPSX]LYTy@By@Cg@Mi@_@aAwBmFoAmDY{@Ga@A[Bm@DWTo@Xa@d@_@HUxB}@~EqBhF}BdEoBnKsFpEyBdDkBbNeH|JkFzP_JjFsC~NyHz]{Qn[qPvEeClM}GfDcBhAm@dFwCpDkBrD_Bt[sPTKp@Cd@CZBTLHJJRDP?TKd@MPIDc@LQ@[IQMIOc@eADkCDiBDsC?mBA{@IYEcBa@sES_A_@iAYk@g@w@iByC]i@gE{Gk@{@}@cAcHkGmFwE_DsClAqDLc@"
+            },
+            "summary": "Santa Rosa - Tagaytay Rd",
+            "warnings": [],
+            "waypoint_order": []
+        }
+    ],
+    "status": "OK"
+}

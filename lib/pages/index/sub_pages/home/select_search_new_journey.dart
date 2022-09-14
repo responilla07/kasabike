@@ -1,9 +1,18 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:kasabike/data/global.dart';
 
 import '../../../../widgets/custom_button.dart';
 import '../../../../widgets/custom_field.dart';
+import 'search_list.dart';
 
 class SelectSearchJourney extends StatefulWidget {
+  const SelectSearchJourney({
+    @required this.callback,
+  });
+
+  final Function callback;
   @override
   _SelectSearchJourneyState createState() => _SelectSearchJourneyState();
 }
@@ -20,10 +29,27 @@ class _SelectSearchJourneyState extends State<SelectSearchJourney> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CustomTextField(
-              hintText: 'Search for new journey',
-              textEditingController: _textEditingController,
-              borderRadius: 8,
+            GestureDetector(
+              onTap: () {
+                widget.callback(true, null);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MapSearchList(),
+                    settings: RouteSettings(name: 'MapSearchList' ?? ""),
+                  ),
+                ).then((value) {
+                  widget.callback(false, value);
+                });
+              },
+              child: CustomTextField(
+                hintText: 'Search for new journey',
+                textEditingController: _textEditingController,
+                borderRadius: 8,
+                enabled: false,
+                suffixIcon: Icon(Icons.search),
+                contentPadding: null,
+              ),
             ),
             SizedBox(height: 24),
             Text(

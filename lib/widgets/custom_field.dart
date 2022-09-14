@@ -12,6 +12,8 @@ class CustomTextField extends StatelessWidget {
   final double containerW;
   final EdgeInsetsGeometry containerPadding;
   final EdgeInsetsGeometry contentPadding;
+  final bool enabled;
+  final Function onEditingComplete;
 
   CustomTextField({
     @required this.hintText,
@@ -25,6 +27,8 @@ class CustomTextField extends StatelessWidget {
     this.containerW,
     this.contentPadding = const EdgeInsets.symmetric(horizontal: 16),
     this.containerPadding,
+    this.enabled = true,
+    this.onEditingComplete,
   });
 
   @override
@@ -34,6 +38,7 @@ class CustomTextField extends StatelessWidget {
       width: containerW,
       padding: containerPadding,
       child: TextField(
+        enabled: enabled,
         controller: textEditingController,
         obscureText: obscureText,
         expands: expands,
@@ -55,6 +60,7 @@ class CustomTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(borderRadius),
           ),
         ),
+        onEditingComplete: onEditingComplete,
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(borderRadius),

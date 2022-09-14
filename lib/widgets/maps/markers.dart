@@ -43,19 +43,19 @@ class AppMarkers {
   static void loadMarkerPinImages() async {
     //44
     final Uint8List pnxMarkerIcon =
-        await _getBytesFromAsset('image/map/my_location.png', 100);
+        await _getBytesFromAsset('images/map/my_location.png', 100);
     _markerIcon.putIfAbsent('store', () => pnxMarkerIcon);
     //
     final Uint8List fmMarkerIcon =
-        await _getBytesFromAsset('image/map/my_location.png', 100);
+        await _getBytesFromAsset('images/map/my_location.png', 100);
     _markerIcon.putIfAbsent('hospital', () => fmMarkerIcon);
     //
     final Uint8List superLPGIcon =
-        await _getBytesFromAsset('image/map/my_location.png', 100);
+        await _getBytesFromAsset('images/map/my_location.png', 100);
     _markerIcon.putIfAbsent('vulcanizing', () => superLPGIcon);
     //
     final Uint8List externalMerchantIcon =
-        await _getBytesFromAsset('image/map/my_location.png', 100);
+        await _getBytesFromAsset('images/map/my_location.png', 100);
     _markerIcon.putIfAbsent('barangay', () => externalMerchantIcon);
   }
 

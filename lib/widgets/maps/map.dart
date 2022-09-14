@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
@@ -11,14 +12,24 @@ import '../../services/location_service.dart';
 import 'markers.dart';
 
 class MapJourney extends StatefulWidget {
-  const MapJourney({Key key}) : super(key: key);
+  final bool hasListener;
+  final double lat;
+  final double lng;
+  final Function callback;
+  const MapJourney({
+    this.hasListener = false,
+    this.lat,
+    this.lng,
+    this.callback,
+  });
   @override
   State<MapJourney> createState() => _MapJourneyState();
 }
 
 class _MapJourneyState extends State<MapJourney> {
   final defaultZoom = 17.4746;
-  LatLng _position = LatLng(14.2096749, 121.1281971);
+  // LatLng _position = LatLng(14.2096749, 121.1281971);
+  LatLng _position = LatLng(14.1259379, 120.9909834);
   Completer<GoogleMapController> _controller = Completer();
   Set<Marker> _appMarkers = {};
 
@@ -34,6 +45,13 @@ class _MapJourneyState extends State<MapJourney> {
       await _getCurrentLocation();
     });
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    widget.callback(false);
+    _locationSubscription?.cancel();
+    super.dispose();
   }
 
   @override
@@ -58,17 +76,6 @@ class _MapJourneyState extends State<MapJourney> {
           _isSingleView = false;
           if (!_journeyStarted && _data == null) {
             log('Re_Center...');
-            await _setDirections(
-              myLocation: LatLng(
-                _currentLocation.latitude,
-                _currentLocation.longitude,
-              ),
-              myDestination: LatLng(
-                14.204178,
-                121.154071,
-              ),
-            );
-            if (_data != null) _journeyStarted = true;
           } else {
             log('Overview_look...');
             if (_data != null) _setMarkers(_data);
@@ -208,11 +215,6 @@ class _MapJourneyState extends State<MapJourney> {
   Future<LocationData> _getCurrentLocation() async {
     _locationSubscription?.cancel();
     _location = Location();
-    _location.changeSettings(
-      accuracy: LocationAccuracy.high,
-      interval: 5,
-      distanceFilter: 5,
-    );
 
     _change() async {
       await AppMarkers.reAnimateCamera(
@@ -242,11 +244,28 @@ class _MapJourneyState extends State<MapJourney> {
       });
     }
 
-    _location.getLocation().then(
+    await _location.changeSettings(
+      accuracy: LocationAccuracy.high,
+      interval: 5,
+      distanceFilter: 5,
+    );
+
+    await _location.getLocation().then(
       (_location) async {
         _currentLocation = _location;
         _change();
-        _isSingleView = false;
+        log('asdsad');
+        await _setDirections(
+          myLocation: LatLng(
+            _currentLocation.latitude,
+            _currentLocation.longitude,
+          ),
+          myDestination: LatLng(
+            widget.lat,
+            widget.lng,
+          ),
+        );
+        if (_data != null) _journeyStarted = true;
         setState(() {});
       },
     );
@@ -257,9 +276,11 @@ class _MapJourneyState extends State<MapJourney> {
         if (_isSingleView) {
           _change();
         } else {
-          await _setMarkers(_data);
+          try {
+            await _setMarkers(_data);
+            setState(() {});
+          } catch (e) {}
         }
-        setState(() {});
       },
     );
 

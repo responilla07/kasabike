@@ -18,11 +18,11 @@ class Maths {
   }
 }
 
-
 navigatorPush({
   @required BuildContext context,
   @required String name,
   @required Widget widget,
+  Function(dynamic) callback,
 }) {
   ScaffoldMessenger.of(context).removeCurrentSnackBar(
     reason: SnackBarClosedReason.dismiss,
@@ -33,7 +33,9 @@ navigatorPush({
       builder: (context) => widget,
       settings: RouteSettings(name: name ?? ""),
     ),
-  );
+  ).then((value) {
+    if (value != null) callback(value);
+  });
 }
 
 void showScaffoldMessage({
