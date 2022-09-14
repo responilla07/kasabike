@@ -38,10 +38,13 @@ class _LoginState extends State<Login> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SvgPicture.asset(
-                      'images/logo.svg',
-                      width: 60,
+                      'images/logo_simple.svg',
+                      width: 56,
                       fit: BoxFit.contain,
                       color: Theme.of(context).primaryColor,
+                    ),
+                    SizedBox(
+                      width: 12,
                     ),
                     Text(
                       'Kasabike',
