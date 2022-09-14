@@ -90,7 +90,7 @@ class _MapPreviewState extends State<MapPreview> {
 
     await _location.getLocation().then(
       (_location) async {
-        await _setMarker(lat: _location.latitude, lng: _location.longitude);
+        // await _setMarker(lat: _location.latitude, lng: _location.longitude);
         // setState(() {});
       },
     );

@@ -1,15 +1,12 @@
+import 'dart:async';
+import "dart:convert";
 import 'dart:developer';
 
-import 'package:geocoder2/geocoder2.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:flutter/material.dart';
-// import 'package:geocoder/geocoder.dart';
-// import 'package:geocoder/services/base.dart';
+import 'package:flutter_polyline_points/flutter_polyline_points.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import "package:http/http.dart" as http;
-import "dart:convert";
-import 'dart:async';
 
 class LocationService {
   static final String _key = 'AIzaSyB-vS5sDXQd73WsZueivavyGIgTERv6c5w';
@@ -108,7 +105,7 @@ class LocationService {
   static Future<dynamic> getPlaceDetails(String placeId) async {
     var component = 'components=country:ph';
     var placeID = 'place_id=$placeId';
-    
+
     var url = '$_mapAPI/place/details/json?$placeID&key=$_key&$component';
     var response = await http.get(Uri.parse(url));
 
